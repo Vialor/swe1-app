@@ -9,5 +9,5 @@ deploy:
   on:
     branch: main
 script:
-  - echo "No tests yet"
+  - black --check .
 after_deploy: "echo 'deployment has finished'"
