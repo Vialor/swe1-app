@@ -1,0 +1,12 @@
+﻿language: python
+deploy:
+  provider: elasticbeanstalk
+  access_key_id:
+    secure: "AKIAX7NBAAF2H5BYECPP"
+  secret_access_key:
+    secure: "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"
+  region: "us-east-1"
+  app: "mysite"
+  env: "mysite-env"
+  bucket_name: "elasticbeanstalk-us-east-1-548482842996"
+after_deploy: "echo 'deployment has finished'"
