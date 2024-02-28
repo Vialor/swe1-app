@@ -10,4 +10,5 @@ deploy:
     branch: main
 script:
   - black --check .
+  - flake8 .
 after_deploy: "echo 'deployment has finished'"
