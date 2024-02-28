@@ -8,7 +8,10 @@ deploy:
   bucket_name: "elasticbeanstalk-us-east-1-548482842996"
   on:
     branch: main
+after_deploy: "echo 'deployment has finished'"
 script:
   - black --check .
   - flake8 .
-after_deploy: "echo 'deployment has finished'"
+  - coverage run tests/*
+after_script:
+  - coveralls
