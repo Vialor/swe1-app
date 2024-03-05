@@ -5,4 +5,4 @@
 
 site: http://mysite-env.us-east-1.elasticbeanstalk.com/polls/ 
 
-Note: Only main branch is protected, develop branch is not just for convenience. Please test the protection on main.
+Note: For convenience, only main branch is protected, develop branch is not. Please test the protection on main.
